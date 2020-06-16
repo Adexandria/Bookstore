@@ -27,7 +27,7 @@ namespace DemoBookstore
         {
             services.AddDbContextPool<AppDbContext>(options =>
 
-               options.UseSqlServer(Configuration.GetConnectionString("BooksDb")));
+               options.UseSqlServer(Configuration.GetConnectionString("BookDb")));
              services.AddScoped<IData,SqlData>();
             services.AddScoped<IDetails, Detailsrepository>();
             
