@@ -42,6 +42,10 @@ namespace DemoBookstore
             {
                 app.UseDeveloperExceptionPage();
             }
+            if (env.IsProduction())
+            {
+                app.UseDeveloperExceptionPage();
+            }
             else
             {
                 app.UseExceptionHandler("/Error");
