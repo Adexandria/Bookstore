@@ -2,14 +2,10 @@ C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\bin\Debug\netcoreapp3.1\Bo
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\bin\Debug\netcoreapp3.1\Books.Data.dll
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\obj\Debug\netcoreapp3.1\Books.Data.AssemblyInfoInputs.cache
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\obj\Debug\netcoreapp3.1\Books.Data.AssemblyInfo.cs
-C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\obj\Debug\netcoreapp3.1\Books.Data.csprojAssemblyReference.cache
-C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\bin\Debug\netcoreapp3.1\Book.Info.dll
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\bin\Debug\netcoreapp3.1\Books.Data.runtimeconfig.json
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\bin\Debug\netcoreapp3.1\Books.Data.runtimeconfig.dev.json
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\bin\Debug\netcoreapp3.1\Books.Data.pdb
-C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\bin\Debug\netcoreapp3.1\Book.info.pdb
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\obj\Debug\netcoreapp3.1\Books.Data.csproj.CoreCompileInputs.cache
-C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\obj\Debug\netcoreapp3.1\Books.Data.csproj.CopyComplete
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\obj\Debug\netcoreapp3.1\Books.Data.dll
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\obj\Debug\netcoreapp3.1\Books.Data.pdb
 C:\Users\HP 650\source\repos\DemoBookstore\Books.Data\obj\Debug\netcoreapp3.1\Books.Data.genruntimeconfig.cache

@@ -13,7 +13,7 @@ namespace DemoBookstore.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private readonly IData data;
-        public IEnumerable<Book.info.Books> Books { get; set; }
+        public IEnumerable<Books.Data.Books> Books { get; set; }
         public IndexModel(ILogger<IndexModel> logger,IData data)
         {
             _logger = logger;

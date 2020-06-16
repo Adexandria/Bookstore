@@ -13,7 +13,7 @@ namespace DemoBookstore.Pages
        
         private readonly IData data;
        
-        public IEnumerable<Book.info.Books> Books { get; set; }
+        public IEnumerable<Books.Data.Books> Books { get; set; }
         public DetailModel(IData data)
         {
             this.data = data;

@@ -10,8 +10,8 @@ namespace DemoBookstore.Pages
 {
     public class AddModel : PageModel
     {
-        public Book.info.Books Details { get; set; }
-        public Book.info.Details Data { get; set; }
+        public Books.Data.Books Details { get; set; }
+        public Details Data { get; set; }
         private readonly IData data;
         private readonly IDetails info;
         public AddModel(IData data,IDetails info)

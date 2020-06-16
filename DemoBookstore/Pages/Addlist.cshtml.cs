@@ -11,10 +11,10 @@ namespace DemoBookstore.Pages
     public class AddlistModel : PageModel
     {
         [BindProperty]
-        public Book.info.Books Books { get; set; }
+        public Books.Data.Books Books { get; set; }
         [BindProperty]
 
-        public Book.info.Details Details { get; set; }
+        public Details Details { get; set; }
         readonly IDetails data;
         readonly IData data1;
         public AddlistModel(IDetails data,IData data1)
@@ -25,7 +25,7 @@ namespace DemoBookstore.Pages
         public IActionResult OnGet(int id)
         {
             Books = data1.GetId(id);
-            Details = new Book.info.Details();
+            Details = new Details();
                 
             
             

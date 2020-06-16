@@ -11,7 +11,7 @@ namespace DemoBookstore.Pages
     public class MoreModel : PageModel
     {
         [BindProperty]
-        public Book.info.Books Books { get; set; }
+        public Books.Data.Books Books { get; set; }
         private readonly IData data;
         public MoreModel(IData data)
         {
@@ -19,7 +19,7 @@ namespace DemoBookstore.Pages
         }
         public IActionResult OnGet()
         {
-            Books = new Book.info.Books();
+            Books = new Books.Data.Books();
             return Page();
             
         }

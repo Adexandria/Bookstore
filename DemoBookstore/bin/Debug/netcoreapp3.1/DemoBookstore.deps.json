@@ -24,7 +24,6 @@
     ".NETCoreApp,Version=v3.1": {
       "DemoBookstore/1.0.0": {
         "dependencies": {
-          "Book.info": "1.0.0",
           "Books.Data": "1.0.0",
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "3.1.5",
@@ -1297,17 +1296,8 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "Book.info/1.0.0": {
-        "runtime": {
-          "Book.Info.dll": {}
-        },
-        "compile": {
-          "Book.Info.dll": {}
-        }
-      },
       "Books.Data/1.0.0": {
         "dependencies": {
-          "Book.info": "1.0.0",
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "3.1.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5"
@@ -3598,11 +3588,6 @@
       "sha512": "sha512-kwo6Kf+0jjEcmB+S2BI5SL0xHHRIBd0Cjf11BGliuZ3Va9V1hDbKZmq0mb7HO8QPlYYrq8eNToOzipfw6ARKEw==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
-    },
-    "Book.info/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Books.Data/1.0.0": {
       "type": "project",

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace DemoBookstore.Pages
 {
     public class BooklistModel : PageModel
-    { public IEnumerable<Book.info.Books> Book { get; set; }
+    { public IEnumerable<Books.Data.Books> Book { get; set; }
         private readonly IData Data;
         public BooklistModel(IData data)
         {

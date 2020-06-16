@@ -10,7 +10,7 @@ namespace DemoBookstore.Pages
 {
     public class PopularModel : PageModel
     { 
-        public IEnumerable<Book.info.Books> Books { get; set; }
+        public IEnumerable<Books.Data.Books> Books { get; set; }
         private readonly IData data;
        
         public PopularModel(IData data)

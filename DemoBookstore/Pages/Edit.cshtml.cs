@@ -11,10 +11,10 @@ namespace DemoBookstore.Pages
     public class EditModel : PageModel
     {
         [BindProperty]
-        public Book.info.Books Books { get; set; }
+        public Books.Data.Books Books { get; set; }
         private readonly IData data;
         [BindProperty]
-        public Book.info.Details Details {get; set;}
+        public Details Details {get; set;}
         private readonly IDetails data1;
         public EditModel(IData data, IDetails data1)
         {
@@ -30,7 +30,7 @@ namespace DemoBookstore.Pages
             }
             else
             {
-             Books = new Book.info.Books();
+             Books = new Books.Data.Books();
             }
             if (Books == null)
             {

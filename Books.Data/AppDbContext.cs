@@ -12,16 +12,16 @@ namespace Books.Data
         {
            
         }
-        public DbSet<Book.info.Books> Books { get; set; }
-        public DbSet<Book.info.Details> Details { get; set; }
+        public DbSet<Books> Books { get; set; }
+        public DbSet<Details> Details { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
  
-            modelBuilder.Entity<Book.info.Books>().ToTable("Book");
-            modelBuilder.Entity<Book.info.Details>().ToTable("Detail");
-            modelBuilder.Entity<Book.info.Books>().HasData(new Book.info.Books
+            modelBuilder.Entity<Books>().ToTable("Book");
+            modelBuilder.Entity<Details>().ToTable("Detail");
+            modelBuilder.Entity<Books>().HasData(new Books
             {
                 Id = 1,
                 Name = "Where the Crawdads Sing",
@@ -34,7 +34,7 @@ namespace Books.Data
             }
 
            );
-            modelBuilder.Entity<Book.info.Books>().HasData(new Book.info.Books
+            modelBuilder.Entity<Books>().HasData(new Books
             {
                 Id = 2,
                 Name = "Becoming",
@@ -47,7 +47,7 @@ namespace Books.Data
             }
 
           );
-            modelBuilder.Entity<Book.info.Books>().HasData(new Book.info.Books
+            modelBuilder.Entity<Books>().HasData(new Books
             {
                 Id = 3,
                 Name = "White Fragility: Why It's So Hard for White People to Talk About Racism",
@@ -60,7 +60,7 @@ namespace Books.Data
             }
 
         );
-            modelBuilder.Entity<Book.info.Books>().HasData(new Book.info.Books
+            modelBuilder.Entity<Books>().HasData(new Books
             {
                 Id = 4,
                 Name = "Burn After Writing",
@@ -73,7 +73,7 @@ namespace Books.Data
             }
 
       );
-            modelBuilder.Entity<Book.info.Books>().HasData(new Book.info.Books
+            modelBuilder.Entity<Books>().HasData(new Books
             {
                 Id = 5,
                 Name = "So You Want to Talk About Race",
@@ -86,7 +86,7 @@ namespace Books.Data
             }
 
       );
-            modelBuilder.Entity<Book.info.Details>().HasData(new Book.info.Details
+            modelBuilder.Entity<Details>().HasData(new Details
             {
                 Id = 1,
                 Description = "For years, rumors of the Marsh Girl "+
@@ -102,7 +102,7 @@ namespace Books.Data
 
           );
 
-            modelBuilder.Entity<Book.info.Details>().HasData(new Book.info.Details
+            modelBuilder.Entity<Details>().HasData(new Details
             {
                 Id = 2,
                 Description = "In a life filled with meaning and accomplishment, Michelle Obama has emerged as one of the most iconic and compelling women of our era."+
@@ -115,7 +115,7 @@ namespace Books.Data
 
           );
 
-            modelBuilder.Entity<Book.info.Details>().HasData(new Book.info.Details
+            modelBuilder.Entity<Details>().HasData(new Details
             {
                 Id = 3,
                 Description = "In this “vital, necessary, and beautiful book” (Michael Eric Dyson), antiracist educator Robin DiAngelo deftly illuminates the phenomenon of white fragility and"+
@@ -129,7 +129,7 @@ namespace Books.Data
 
           );
 
-            modelBuilder.Entity<Book.info.Details>().HasData(new Book.info.Details
+            modelBuilder.Entity<Details>().HasData(new Details
             {
                 Id = 4,
                 Description = "Push your limits, reflect on your past, present, and future, and create a secret book that’s about you, and just for you. And when you’re finished, toss it, hide it, or Burn After Writing.",
@@ -141,7 +141,7 @@ namespace Books.Data
 
           );
 
-            modelBuilder.Entity<Book.info.Details>().HasData(new Book.info.Details
+            modelBuilder.Entity<Details>().HasData(new Details
             {
                 Id = 5,
                 Description = "Widespread reporting on aspects of white supremacy--from police brutality to the mass incarceration of Black Americans--has put a media spotlight on racism in our society. Still, it is a difficult subject to talk about. How do you tell your roommate her jokes are racist? Why did your sister-in-law take umbrage when you asked to touch her hair--and how do you make it right? How do you explain white privilege to your white, privileged friend?"+

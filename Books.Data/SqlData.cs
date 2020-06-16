@@ -14,7 +14,7 @@ namespace Books.Data
             this.app=app;
         }
 
-        public IEnumerable<Book.info.Books> GetBooks { 
+        public IEnumerable<Books> GetBooks { 
             get
             {
                 var query = from r in app.Books
@@ -24,7 +24,7 @@ namespace Books.Data
             }
         }
 
-        public IEnumerable<Book.info.Books> BookOftheweek {
+        public IEnumerable<Books> BookOftheweek {
             get
 
             {
@@ -32,7 +32,7 @@ namespace Books.Data
             }
         }
 
-        public IEnumerable<Book.info.Books> TrendyBooks
+        public IEnumerable<Books> TrendyBooks
         {
             get
             {
@@ -40,7 +40,7 @@ namespace Books.Data
             }
         }
 
-        public IEnumerable<Book.info.Books> Newbooks
+        public IEnumerable<Books> Newbooks
         {
             get
             {
@@ -50,7 +50,7 @@ namespace Books.Data
 
        
 
-        public Book.info.Books Add(Book.info.Books added)
+        public Books Add(Books added)
         {
             app.Add(added);
             return added;
@@ -66,7 +66,7 @@ namespace Books.Data
             return app.SaveChanges();
         }
 
-        public Book.info.Books Delete(int id)
+        public Books Delete(int id)
         {
             var query = GetId(id);
             if (query != null)
@@ -83,7 +83,7 @@ namespace Books.Data
             return app.Books.Count();
         }
 
-        public IEnumerable<Book.info.Books> GetData(string name)
+        public IEnumerable<Books> GetData(string name)
         {
             var query = from a in app.Books
                         where string.IsNullOrWhiteSpace(name) || a.Name.StartsWith(name)
@@ -92,12 +92,12 @@ namespace Books.Data
             return query;
         }
 
-        public Book.info.Books GetId(int id)
+        public Books GetId(int id)
         {
             return app.Books.Find(id);
         }
 
-        public Book.info.Books Update(Book.info.Books update)
+        public Books Update(Books update)
         {
             var query = app.Books.Attach(update);
             query.State = EntityState.Modified;

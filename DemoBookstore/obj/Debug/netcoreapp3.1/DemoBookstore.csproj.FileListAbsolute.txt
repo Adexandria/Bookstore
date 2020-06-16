@@ -74,9 +74,7 @@ C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\obj\Debug\netcoreapp3.1
 C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\obj\Debug\netcoreapp3.1\DemoBookstore.dll
 C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\obj\Debug\netcoreapp3.1\DemoBookstore.pdb
 C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\obj\Debug\netcoreapp3.1\DemoBookstore.genruntimeconfig.cache
-C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\bin\Debug\netcoreapp3.1\Book.Info.dll
 C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\bin\Debug\netcoreapp3.1\Books.Data.dll
-C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\bin\Debug\netcoreapp3.1\Book.Info.pdb
 C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\bin\Debug\netcoreapp3.1\Books.Data.pdb
 C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\obj\Debug\netcoreapp3.1\Razor\Pages\Popular.cshtml.g.cs
 C:\Users\HP 650\source\repos\DemoBookstore\DemoBookstore\obj\Debug\netcoreapp3.1\Razor\Pages\Notfound.cshtml.g.cs

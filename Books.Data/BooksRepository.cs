@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Book.info;
+
 using System.Text;
 using System.Reflection.Metadata.Ecma335;
 
@@ -9,11 +9,11 @@ namespace Books.Data
 {
     public class BooksRepository : IData
     {
-       readonly List<Book.info.Books> Book;
+       readonly List<Books> Book;
         public BooksRepository()
         {
-            Book = new List<Book.info.Books>()
-            { new Book.info.Books{
+            Book = new List<Books>()
+            { new Books{
                Id = 1,
                 Name = "White Fragility: Why It's So Hard for White People to Talk About Racism",
                 Author = "Robin DiAngelo",
@@ -25,7 +25,7 @@ namespace Books.Data
 
         }
 
-        public IEnumerable<Book.info.Books> GetBooks { 
+        public IEnumerable<Books> GetBooks { 
             get
 
             {
@@ -35,13 +35,13 @@ namespace Books.Data
 
        
 
-        public IEnumerable<Book.info.Books> BookOftheweek => throw new NotImplementedException();
+        public IEnumerable<Books> BookOftheweek => throw new NotImplementedException();
 
-        public IEnumerable<Book.info.Books> TrendyBooks => throw new NotImplementedException();
+        public IEnumerable<Books> TrendyBooks => throw new NotImplementedException();
 
-        public IEnumerable<Book.info.Books> Newbooks => throw new NotImplementedException();
+        public IEnumerable<Books> Newbooks => throw new NotImplementedException();
 
-        public Book.info.Books Add(Book.info.Books added)
+        public Books Add(Books added)
         {
             Book.Add(added);
             added.Id = Book.Max(r => r.Id) + 1;
@@ -53,7 +53,7 @@ namespace Books.Data
             return 0;
         }
 
-        public Book.info.Books Delete(int id)
+        public Books Delete(int id)
         {
             var query = Book.FirstOrDefault(r => r.Id == id);
             if (query != null)
@@ -70,7 +70,7 @@ namespace Books.Data
             return Book.Count();
         }
 
-        public IEnumerable<Book.info.Books> GetData(string name)
+        public IEnumerable<Books> GetData(string name)
         {
             var query = from a in Book
                         where string.IsNullOrWhiteSpace(name) || a.Name.StartsWith(name)
@@ -80,13 +80,13 @@ namespace Books.Data
             return query2;
         }
 
-        public Book.info.Books GetId(int id)
+        public Books GetId(int id)
         {
             var query = Book.SingleOrDefault(r => r.Id == id);
             return query;
         }
 
-        public Book.info.Books Update(Book.info.Books update)
+        public Books Update(Books update)
         {
             var query = Book.SingleOrDefault(r => r.Id == update.Id);
             if (update != null)

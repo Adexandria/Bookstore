@@ -12,8 +12,8 @@ namespace DemoBookstore.Pages
     {
         private readonly IDetails data;
         private readonly IData data1;
-        public Book.info.Details Books { get; set; }
-        public Book.info.Books Paper { get; set; }
+        public Details Books { get; set; }
+        public Books.Data.Books Paper { get; set; }
         public ListModel(IDetails data, IData data1)
         {
             this.data = data;
