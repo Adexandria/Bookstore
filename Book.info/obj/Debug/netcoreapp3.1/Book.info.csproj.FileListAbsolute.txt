@@ -1,0 +1,9 @@
+C:\Users\HP 650\source\repos\DemoBookstore\Book.info\bin\Debug\netcoreapp3.1\Book.info.deps.json
+C:\Users\HP 650\source\repos\DemoBookstore\Book.info\bin\Debug\netcoreapp3.1\Book.info.dll
+C:\Users\HP 650\source\repos\DemoBookstore\Book.info\bin\Debug\netcoreapp3.1\Book.info.pdb
+C:\Users\HP 650\source\repos\DemoBookstore\Book.info\obj\Debug\netcoreapp3.1\Book.info.csproj.CoreCompileInputs.cache
+C:\Users\HP 650\source\repos\DemoBookstore\Book.info\obj\Debug\netcoreapp3.1\Book.info.AssemblyInfoInputs.cache
+C:\Users\HP 650\source\repos\DemoBookstore\Book.info\obj\Debug\netcoreapp3.1\Book.info.AssemblyInfo.cs
+C:\Users\HP 650\source\repos\DemoBookstore\Book.info\obj\Debug\netcoreapp3.1\Book.info.dll
+C:\Users\HP 650\source\repos\DemoBookstore\Book.info\obj\Debug\netcoreapp3.1\Book.info.pdb
+C:\Users\HP 650\source\repos\DemoBookstore\Book.info\obj\Debug\netcoreapp3.1\Book.info.csprojAssemblyReference.cache

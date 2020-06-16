@@ -1,0 +1,44 @@
+﻿@page "{id:int}"
+@model DemoBookstore.Pages.ListModel
+@{
+}
+<a asp-page="./Detail" class="text-md-left"> New</a>
+<div class="text-md-right" style="width:40%">
+
+
+    <img alt="@Model.Paper.Name" src="@Model.Paper.Image" />
+
+    <h4 class="align-content-sm-center">
+        @Model.Paper.Name
+    </h4>
+</div>
+
+
+<p class="text-md-center">
+    @Model.Books.Description
+    <h6>
+        @Model.Books.Editorial
+    </h6>
+    @Model.Books.Review
+</p>
+<table class="table">
+    <tc>
+        <td>
+            <h5 class="text-md-left">
+                @Model.Paper.Author
+                $@Model.Paper.Price
+            </h5>
+
+            <h4 class="text-md-right">
+                @Model.Books.Ratings
+                <a asp-page="./Add" asp-route-id="@Model.Books.Id" class="btn btn-outline-primary"> Delete</a>
+                <a asp-page="./Edit" asp-route-id="@Model.Paper.Id" class="btn btn-outline-primary"> Edit</a>
+
+            </h4>
+        </td>
+    </tc>
+
+</table>
+
+
+

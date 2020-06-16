@@ -1,0 +1,74 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+    <div class="text-md-right">
+        <p>
+
+        </p>
+        <h3>
+            Categories
+        </h3>
+        <h5>
+            <a asp-page="./Popular">
+                Trendy Books
+            </a>
+        </h5>
+        <h5><a asp-page="./Detail">New Books</a></h5>
+
+
+
+    </div>
+  <div class="align-content-center">
+        <img class="mySlides" src="~/New Books1.png" style="width:90%">
+        <img class="mySlides" src="~/New Books2.png" style="width:90%">
+        <img class="mySlides" src="~/NewBooks3.jpg" style="width:90%">
+        <img class="mySlides" src="~/new Book4.jpg" style="width:90%">
+    </div>
+    
+
+
+<div class="text-md-left">
+    <h3>
+        BEST OF THE WEEK
+    </h3>
+    <table class="table">
+        @foreach(var book in Model.Books)
+        { 
+            <tc>
+                <td>
+                    <div class="thumbnail" style="width:90%">
+                       
+                    <img alt="@book.Name"src ="@book.Image" />
+                        <h4 class="align-content-sm-center">
+                            <a asp-page="./List" asp-route-id="@book.Id" >
+                                @book.Name
+                            </a>
+                        
+                        </h4>
+                     
+                            </div>
+                </td>
+            </tc>
+        }
+    </table>
+</div>
+<script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+</script>
+

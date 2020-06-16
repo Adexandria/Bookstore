@@ -1,0 +1,44 @@
+﻿@page
+
+@model DemoBookstore.Pages.DetailModel
+@{
+}
+
+<table class="table">
+    @foreach (var book in Model.Books)
+    {
+
+        <tc>
+            <td>
+
+                <div class="thumbnail" style="width:70%">
+
+                    <img alt="@book.Name" src="@book.Image" />
+                    <h4 class="align-content-sm-center">
+                        @book.Name
+                    </h4>
+                    <h5>
+                        @book.Author
+                    </h5>
+                    <a asp-page="./List" asp-route-id="@book.Id" class="btn btn-outline-primary"> more Details</a>
+                    <a asp-page="./Edit" asp-route-id="@book.Id" class="btn btn-outline-primary"> Edit</a>
+                    <a asp-page="./Add" asp-route-id="@book.Id" class="btn btn-outline-primary"> Delete</a>
+                    <span class="success">new</span>
+                </div>
+            </td>
+        </tc>
+    }
+</table>
+
+
+<style>
+
+
+    .success {
+        background-color: #4CAF50;
+    }
+        /* Green */
+        .success:hover {
+            background-color: #46a049;
+        }
+</style>
